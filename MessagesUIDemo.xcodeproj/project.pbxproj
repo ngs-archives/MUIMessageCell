@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85CB627D15A22C6900EA0F77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85CB627C15A22C6900EA0F77 /* UIKit.framework */; };
+		85CB627F15A22C6900EA0F77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85CB627E15A22C6900EA0F77 /* Foundation.framework */; };
+		85CB628115A22C6900EA0F77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85CB628015A22C6900EA0F77 /* CoreGraphics.framework */; };
+		85CB628715A22C6900EA0F77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85CB628515A22C6900EA0F77 /* InfoPlist.strings */; };
+		85CB628915A22C6900EA0F77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB628815A22C6900EA0F77 /* main.m */; };
+		85CB628D15A22C6900EA0F77 /* MUIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB628C15A22C6900EA0F77 /* MUIAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		85CB627815A22C6900EA0F77 /* MessagesUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessagesUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85CB627C15A22C6900EA0F77 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		85CB627E15A22C6900EA0F77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		85CB628015A22C6900EA0F77 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		85CB628415A22C6900EA0F77 /* MessagesUIDemo-Info.plist */ = {isa = PBXFileReference; path = "MessagesUIDemo-Info.plist"; sourceTree = "<group>"; };
+		85CB628615A22C6900EA0F77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		85CB628815A22C6900EA0F77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85CB628A15A22C6900EA0F77 /* MessagesUIDemo-Prefix.pch */ = {isa = PBXFileReference; path = "MessagesUIDemo-Prefix.pch"; sourceTree = "<group>"; };
+		85CB628B15A22C6900EA0F77 /* MUIAppDelegate.h */ = {isa = PBXFileReference; path = MUIAppDelegate.h; sourceTree = "<group>"; };
+		85CB628C15A22C6900EA0F77 /* MUIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUIAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85CB627515A22C6800EA0F77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85CB627D15A22C6900EA0F77 /* UIKit.framework in Frameworks */,
+				85CB627F15A22C6900EA0F77 /* Foundation.framework in Frameworks */,
+				85CB628115A22C6900EA0F77 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85CB626D15A22C6800EA0F77 = {
+			isa = PBXGroup;
+			children = (
+				85CB628215A22C6900EA0F77 /* MessagesUIDemo */,
+				85CB627B15A22C6900EA0F77 /* Frameworks */,
+				85CB627915A22C6900EA0F77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85CB627915A22C6900EA0F77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85CB627815A22C6900EA0F77 /* MessagesUIDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85CB627B15A22C6900EA0F77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85CB627C15A22C6900EA0F77 /* UIKit.framework */,
+				85CB627E15A22C6900EA0F77 /* Foundation.framework */,
+				85CB628015A22C6900EA0F77 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85CB628215A22C6900EA0F77 /* MessagesUIDemo */ = {
+			isa = PBXGroup;
+			children = (
+				85CB628B15A22C6900EA0F77 /* MUIAppDelegate.h */,
+				85CB628C15A22C6900EA0F77 /* MUIAppDelegate.m */,
+				85CB628315A22C6900EA0F77 /* Supporting Files */,
+			);
+			path = MessagesUIDemo;
+			sourceTree = "<group>";
+		};
+		85CB628315A22C6900EA0F77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85CB628415A22C6900EA0F77 /* MessagesUIDemo-Info.plist */,
+				85CB628515A22C6900EA0F77 /* InfoPlist.strings */,
+				85CB628815A22C6900EA0F77 /* main.m */,
+				85CB628A15A22C6900EA0F77 /* MessagesUIDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85CB627715A22C6800EA0F77 /* MessagesUIDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85CB629015A22C6900EA0F77 /* Build configuration list for PBXNativeTarget "MessagesUIDemo" */;
+			buildPhases = (
+				85CB627415A22C6800EA0F77 /* Sources */,
+				85CB627515A22C6800EA0F77 /* Frameworks */,
+				85CB627615A22C6800EA0F77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessagesUIDemo;
+			productName = MessagesUIDemo;
+			productReference = 85CB627815A22C6900EA0F77 /* MessagesUIDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85CB626F15A22C6800EA0F77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MUI;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 85CB627215A22C6800EA0F77 /* Build configuration list for PBXProject "MessagesUIDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 85CB626D15A22C6800EA0F77;
+			productRefGroup = 85CB627915A22C6900EA0F77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85CB627715A22C6800EA0F77 /* MessagesUIDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85CB627615A22C6800EA0F77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85CB628715A22C6900EA0F77 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85CB627415A22C6800EA0F77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85CB628915A22C6900EA0F77 /* main.m in Sources */,
+				85CB628D15A22C6900EA0F77 /* MUIAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		85CB628515A22C6900EA0F77 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85CB628615A22C6900EA0F77 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85CB628E15A22C6900EA0F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		85CB628F15A22C6900EA0F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85CB629115A22C6900EA0F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MessagesUIDemo/MessagesUIDemo-Prefix.pch";
+				INFOPLIST_FILE = "MessagesUIDemo/MessagesUIDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		85CB629215A22C6900EA0F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MessagesUIDemo/MessagesUIDemo-Prefix.pch";
+				INFOPLIST_FILE = "MessagesUIDemo/MessagesUIDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85CB627215A22C6800EA0F77 /* Build configuration list for PBXProject "MessagesUIDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85CB628E15A22C6900EA0F77 /* Debug */,
+				85CB628F15A22C6900EA0F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85CB629015A22C6900EA0F77 /* Build configuration list for PBXNativeTarget "MessagesUIDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85CB629115A22C6900EA0F77 /* Debug */,
+				85CB629215A22C6900EA0F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85CB626F15A22C6800EA0F77 /* Project object */;
+}
