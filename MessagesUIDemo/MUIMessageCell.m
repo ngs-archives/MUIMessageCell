@@ -19,6 +19,13 @@
 , backgroundImageView = _backgroundImageView
 ;
 
++ (CGFloat)cellHeightForMessageText:(NSString *)text direction:(MUIMessageCellDirection)direction {
+  CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:14]
+                 constrainedToSize:CGSizeMake(280, FLT_MAX)
+                     lineBreakMode:UILineBreakModeCharacterWrap]; 
+  return size.height + 63;
+}
+
 - (void)setDirection:(MUIMessageCellDirection)direction {
   _direction = direction;
   [self setNeedsLayout];
@@ -40,21 +47,33 @@
 - (void)layoutSubviews {
   [super layoutSubviews];
   UIImage *bgImage = nil;
-  CGFloat left = 0;
-  if(self.direction == MUIMessageCellDirectionLeft) {
+  CGFloat contentWidth = self.contentView.frame.size.width;
+  self.backgroundImageView.contentMode = UIViewContentModeScaleToFill;
+  if(self.direction == MUIMessageCellDirectionLeft)
     bgImage = [[UIImage imageNamed:@"ChatBubbleGray"] resizableImageWithCapInsets:UIEdgeInsetsMake(36, 38, 28, 38)];
-    left = 38;
-  } else {
+  else
     bgImage = [[UIImage imageNamed:@"ChatBubbleBlue"] resizableImageWithCapInsets:UIEdgeInsetsMake(36, 28, 28, 38)];
-    left = 28;
-  }
+  self.textLabel.numberOfLines = 0;
   self.textLabel.font = [UIFont systemFontOfSize:14];
   self.textLabel.lineBreakMode = UILineBreakModeCharacterWrap;
-  self.textLabel.frame = CGRectMake(left, 38, self.contentView.frame.size.width - 80, 0);
+  self.textLabel.frame = CGRectMake(0, 27, contentWidth - 40, 0);
   [self.textLabel sizeToFit];
   self.textLabel.backgroundColor = [UIColor clearColor];
   //
-  self.backgroundImageView.frame = self.contentView.frame;
+  CGRect textFrame = self.textLabel.frame;
+  CGSize textSize = textFrame.size;
+  CGRect bgFrame = CGRectMake(0, 5, textSize.width + 33, textSize.height + 48);
+  if(bgFrame.size.width < 100)
+    bgFrame.size.width = 100;
+  if(self.direction == MUIMessageCellDirectionLeft) {
+    bgFrame.origin.x = 0;
+    textFrame.origin.x = bgFrame.origin.x + 23;
+  } else {
+    bgFrame.origin.x = contentWidth - bgFrame.size.width;
+    textFrame.origin.x = bgFrame.origin.x + 13;
+  }
+  self.textLabel.frame = textFrame;
+  self.backgroundImageView.frame = bgFrame;
   self.selectionStyle = UITableViewCellSelectionStyleNone;
   self.backgroundImageView.image = bgImage;
 }

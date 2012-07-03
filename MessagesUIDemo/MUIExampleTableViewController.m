@@ -10,16 +10,28 @@
 #import "MUIMessageCell.h"
 
 @implementation MUIExampleTableViewController
+@synthesize dummyTexts = _dummyTexts;
 
 - (void)viewDidLoad {
   [super viewDidLoad];
   self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+  self.tableView.backgroundColor = [UIColor colorWithRed:0.859 green:0.882 blue:0.929 alpha:1.000];
+  self.dummyTexts = [NSArray arrayWithObjects:
+                     @"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                     @"Integer feugiat rutrum mauris, et ultricies erat porttitor et. Suspendisse odio magna, condimentum at egestas vitae, porta a nisi.",
+                     @"Morbi sodales sollicitudin nisl, sed suscipit enim tempor nec. Sed sed lectus quis metus iaculis dignissim quis vitae lorem.",
+                     @"Ut egestas pulvinar nisi ut eleifend.",
+                     @"Ut condimentum laoreet laoreet. Aenean egestas tortor.",
+                     @"Ut",
+                     @"Ut",
+                     nil];
+                     
 }
 
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  return 5;
+  return self.dummyTexts.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -29,24 +41,14 @@
     cell = [[MUIMessageCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
   }
   cell.direction = indexPath.row % 2 == 1 ? MUIMessageCellDirectionLeft : MUIMessageCellDirectionRight;
-  switch (indexPath.row) {
-    case 0:
-      cell.textLabel.text = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
-      break;
-    case 1:
-      cell.textLabel.text = @"Integer feugiat rutrum mauris, et ultricies erat porttitor et. Suspendisse odio magna, condimentum at egestas vitae, porta a nisi.";
-      break;
-    case 2:
-      cell.textLabel.text = @"Morbi sodales sollicitudin nisl, sed suscipit enim tempor nec. Sed sed lectus quis metus iaculis dignissim quis vitae lorem.";
-      break;
-    case 3:
-      cell.textLabel.text = @"Ut egestas pulvinar nisi ut eleifend.";
-      break;
-    case 4:
-      cell.textLabel.text = @"Ut condimentum laoreet laoreet. Aenean egestas tortor.";
-      break;
-  }
+  cell.textLabel.text = [self.dummyTexts objectAtIndex:indexPath.row];
   return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+  MUIMessageCellDirection dir = indexPath.row % 2 == 1 ? MUIMessageCellDirectionLeft : MUIMessageCellDirectionRight;
+  return [MUIMessageCell cellHeightForMessageText:[self.dummyTexts objectAtIndex:indexPath.row]
+                                        direction:dir];
 }
 
 

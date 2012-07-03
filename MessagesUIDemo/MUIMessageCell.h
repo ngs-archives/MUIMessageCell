@@ -16,5 +16,6 @@ typedef enum {
 @interface MUIMessageCell : UITableViewCell
 
 @property (nonatomic) MUIMessageCellDirection direction;
++ (CGFloat)cellHeightForMessageText:(NSString *)text direction:(MUIMessageCellDirection)direction;
 
 @end

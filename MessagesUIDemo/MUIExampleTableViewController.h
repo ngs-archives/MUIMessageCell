@@ -10,4 +10,6 @@
 
 @interface MUIExampleTableViewController : UITableViewController
 
+@property (nonatomic, strong) NSArray *dummyTexts;
+
 @end
