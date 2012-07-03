@@ -1,5 +1,5 @@
 //
-//  MUIAppDelegate.h
+//  MUIExampleTableViewController.h
 //  MessagesUIDemo
 //
 //  Created by Atsushi Nagase on 7/3/12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MUIAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface MUIExampleTableViewController : UITableViewController
 
 @end

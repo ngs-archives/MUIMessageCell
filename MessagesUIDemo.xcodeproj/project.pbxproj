@@ -13,6 +13,12 @@
 		85CB628715A22C6900EA0F77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85CB628515A22C6900EA0F77 /* InfoPlist.strings */; };
 		85CB628915A22C6900EA0F77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB628815A22C6900EA0F77 /* main.m */; };
 		85CB628D15A22C6900EA0F77 /* MUIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB628C15A22C6900EA0F77 /* MUIAppDelegate.m */; };
+		85CB629515A2360700EA0F77 /* ChatBubbleBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 85CB629315A2360700EA0F77 /* ChatBubbleBlue.png */; };
+		85CB629615A2360700EA0F77 /* ChatBubbleGray.png in Resources */ = {isa = PBXBuildFile; fileRef = 85CB629415A2360700EA0F77 /* ChatBubbleGray.png */; };
+		85CB629915A2395500EA0F77 /* ChatBubbleBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85CB629715A2395500EA0F77 /* ChatBubbleBlue@2x.png */; };
+		85CB629A15A2395500EA0F77 /* ChatBubbleGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85CB629815A2395500EA0F77 /* ChatBubbleGray@2x.png */; };
+		85CB629D15A25C6900EA0F77 /* MUIExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB629C15A25C6900EA0F77 /* MUIExampleTableViewController.m */; };
+		85CB62A015A2932100EA0F77 /* MUIMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB629F15A2932100EA0F77 /* MUIMessageCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +26,20 @@
 		85CB627C15A22C6900EA0F77 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		85CB627E15A22C6900EA0F77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		85CB628015A22C6900EA0F77 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		85CB628415A22C6900EA0F77 /* MessagesUIDemo-Info.plist */ = {isa = PBXFileReference; path = "MessagesUIDemo-Info.plist"; sourceTree = "<group>"; };
+		85CB628415A22C6900EA0F77 /* MessagesUIDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MessagesUIDemo-Info.plist"; sourceTree = "<group>"; };
 		85CB628615A22C6900EA0F77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		85CB628815A22C6900EA0F77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		85CB628A15A22C6900EA0F77 /* MessagesUIDemo-Prefix.pch */ = {isa = PBXFileReference; path = "MessagesUIDemo-Prefix.pch"; sourceTree = "<group>"; };
-		85CB628B15A22C6900EA0F77 /* MUIAppDelegate.h */ = {isa = PBXFileReference; path = MUIAppDelegate.h; sourceTree = "<group>"; };
+		85CB628A15A22C6900EA0F77 /* MessagesUIDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MessagesUIDemo-Prefix.pch"; sourceTree = "<group>"; };
+		85CB628B15A22C6900EA0F77 /* MUIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUIAppDelegate.h; sourceTree = "<group>"; };
 		85CB628C15A22C6900EA0F77 /* MUIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUIAppDelegate.m; sourceTree = "<group>"; };
+		85CB629315A2360700EA0F77 /* ChatBubbleBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChatBubbleBlue.png; sourceTree = "<group>"; };
+		85CB629415A2360700EA0F77 /* ChatBubbleGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChatBubbleGray.png; sourceTree = "<group>"; };
+		85CB629715A2395500EA0F77 /* ChatBubbleBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChatBubbleBlue@2x.png"; sourceTree = "<group>"; };
+		85CB629815A2395500EA0F77 /* ChatBubbleGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChatBubbleGray@2x.png"; sourceTree = "<group>"; };
+		85CB629B15A25C6900EA0F77 /* MUIExampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUIExampleTableViewController.h; sourceTree = "<group>"; };
+		85CB629C15A25C6900EA0F77 /* MUIExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUIExampleTableViewController.m; sourceTree = "<group>"; };
+		85CB629E15A2932100EA0F77 /* MUIMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUIMessageCell.h; sourceTree = "<group>"; };
+		85CB629F15A2932100EA0F77 /* MUIMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUIMessageCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +89,10 @@
 				85CB628B15A22C6900EA0F77 /* MUIAppDelegate.h */,
 				85CB628C15A22C6900EA0F77 /* MUIAppDelegate.m */,
 				85CB628315A22C6900EA0F77 /* Supporting Files */,
+				85CB629B15A25C6900EA0F77 /* MUIExampleTableViewController.h */,
+				85CB629C15A25C6900EA0F77 /* MUIExampleTableViewController.m */,
+				85CB629E15A2932100EA0F77 /* MUIMessageCell.h */,
+				85CB629F15A2932100EA0F77 /* MUIMessageCell.m */,
 			);
 			path = MessagesUIDemo;
 			sourceTree = "<group>";
@@ -82,6 +100,10 @@
 		85CB628315A22C6900EA0F77 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				85CB629315A2360700EA0F77 /* ChatBubbleBlue.png */,
+				85CB629415A2360700EA0F77 /* ChatBubbleGray.png */,
+				85CB629715A2395500EA0F77 /* ChatBubbleBlue@2x.png */,
+				85CB629815A2395500EA0F77 /* ChatBubbleGray@2x.png */,
 				85CB628415A22C6900EA0F77 /* MessagesUIDemo-Info.plist */,
 				85CB628515A22C6900EA0F77 /* InfoPlist.strings */,
 				85CB628815A22C6900EA0F77 /* main.m */,
@@ -118,6 +140,7 @@
 			attributes = {
 				CLASSPREFIX = MUI;
 				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "LittleApps Inc";
 			};
 			buildConfigurationList = 85CB627215A22C6800EA0F77 /* Build configuration list for PBXProject "MessagesUIDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -142,6 +165,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				85CB628715A22C6900EA0F77 /* InfoPlist.strings in Resources */,
+				85CB629515A2360700EA0F77 /* ChatBubbleBlue.png in Resources */,
+				85CB629615A2360700EA0F77 /* ChatBubbleGray.png in Resources */,
+				85CB629915A2395500EA0F77 /* ChatBubbleBlue@2x.png in Resources */,
+				85CB629A15A2395500EA0F77 /* ChatBubbleGray@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +181,8 @@
 			files = (
 				85CB628915A22C6900EA0F77 /* main.m in Sources */,
 				85CB628D15A22C6900EA0F77 /* MUIAppDelegate.m in Sources */,
+				85CB629D15A25C6900EA0F77 /* MUIExampleTableViewController.m in Sources */,
+				85CB62A015A2932100EA0F77 /* MUIMessageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
